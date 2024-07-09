@@ -40,5 +40,28 @@ class DemoController extends Controller
         return array(['name'=>'ostad', 'age'=>20], ['name'=>'ostad1', 'age'=>30]);
     }
 
+    // Response Type Json
+
+    function demo7(){
+        return response()->json([['name'=>'Ostad2', 'age'=> 20], ['name'=>'ostad3', 'age'=> 30]]);
+    }
+     
+    // Response message, data, code
+    function demo8(){
+        return response()->json(['message'=>'Registration Success' , 'data'=>['name'=>'ostad1', 'age'=>20]], status:401);
+
+    }
+
+       // Response Redirect
+    function demo9(){
+        return redirect('/demo1');
+    }
+
+ 
+// Binary File Response
+    function demo10()
+{
+
+}
 
 }

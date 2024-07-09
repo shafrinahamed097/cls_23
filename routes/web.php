@@ -9,6 +9,9 @@ Route::get('/demo3', [DemoController::class,'demo3']);
 Route::get('/demo4', [DemoController::class,'demo4']);
 Route::get('/demo5', [DemoController::class,'demo5']);
 Route::get('/demo6', [DemoController::class,'demo6']);
+Route::get('/demo7', [DemoController::class,'demo7']);
+Route::get('/demo8', [DemoController::class,'demo8']);
+Route::get('/demo9', [DemoController::class,'demo9']);
 
 
 
