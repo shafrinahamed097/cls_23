@@ -59,9 +59,29 @@ class DemoController extends Controller
 
  
 // Binary File Response
-    function demo10()
-{
+    function demo10(){
+        $path="IMG_7959.JPG";
+        return response()->file($path);
+    }
 
-}
+    // Download File response
+
+    function demo11(){
+        $path="IMG_7959.JPG";
+        return response()->download($path);
+
+    }
+
+    // response cookies
+
+    function demo12(){
+        return response("Say Hello")->cookie('name', 'ostad1');
+    }
+    
+    // attaching response header
+
+    function demo13(){
+        
+    }
 
 }
