@@ -16,6 +16,13 @@ Route::get('/demo10', [DemoController::class,'demo10']);
 Route::get('/demo11', [DemoController::class,'demo11']);
 Route::get('/demo12', [DemoController::class,'demo12']);
 Route::get('/demo13', [DemoController::class,'demo13']);
+Route::get('/demo14', [DemoController::class,'demo14']);
+Route::get('/demo15/{num1}/{num2}', [DemoController::class,'demo15']);
+Route::post('/demo16', [DemoController::class,'demo16']);
+Route::post('/demo17', [DemoController::class,'demo17']);
+Route::post('/demo18', [DemoController::class,'demo18']);
+Route::post('/demo19', [DemoController::class,'demo19']);
+
 
 
 

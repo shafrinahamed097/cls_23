@@ -84,6 +84,55 @@ class DemoController extends Controller
         return response ("Hello")->header("my-token",'abc11223');
     }
 
+    // response view
+
+    function demo14(){
+        return view('index');
+    }
+
+
+    // -------------------------------------------------------------------------------------
+
+    // Request URL Params
+
+    function demo15(Request $request){
+        $a=$request->num1;
+        $b=$request->num2;
+
+        return $a+$b;
+
+    }
+
+    // Request Body
+
+    function demo16(Request $request){
+        $wholeBody=$request->input();
+        $a=$wholeBody['num1'];
+        $b=$wholeBody['num2'];
+        return $a+$b;
+    }
+
+    // Request Header
+
+    function demo17(Request $request){
+        $a=$request->header('my_key');
+        return $a;
+    }
+  
+
+    // Request IP
+
+    function demo18(Request $request){
+        return $request->ip();
+    }
+
+    // Request Cookies
+
+    function demo19(Request $request){
+        $myCookies=$request->cookie();
+        return $myCookies;
+
+    }
 
 
 
@@ -111,6 +160,6 @@ class DemoController extends Controller
 
 
 
-    
+
 
 }
