@@ -81,7 +81,36 @@ class DemoController extends Controller
     // attaching response header
 
     function demo13(){
-        
+        return response ("Hello")->header("my-token",'abc11223');
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
 
 }
